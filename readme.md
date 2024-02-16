@@ -45,7 +45,3 @@ Este proyecto es un sistema backend desarrollado en Flask con una base de datos 
 
 3. **Página de Acciones:**
    - Lista los productos y permite actualizar, eliminar y agregar nuevos productos.
-
-## Dependencias
-
-Las dependencias del proyecto están especificadas en el archivo `requirements.txt`.
