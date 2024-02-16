@@ -1,0 +1,38 @@
+{%extends 'base.html'%}
+
+{%block title%}Wolf store - Product{%endblock%}
+
+{%block body%}
+
+<div class="container">
+    <h3> Update Product </h3>
+    {% if (dataproduct) %}
+    <form action="{{ url_for('update_product' , id = dataproduct.id )}}" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">Product title</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ dataproduct.title }}"
+                placeholder="Product title" required>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Product description</label>
+            <textarea class="form-control" id="description" name="description" rows="3"
+                required>{{ dataproduct.desciption }}</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Product price</label>
+            <input type="number" class="form-control" id="price" name="price" value="{{ dataproduct.price }}"
+                placeholder="Product price" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% else %}
+    <div class="col-12">
+        <h2 class="text-center">
+            No existe el Coche
+        </h2>
+    </div>
+    {% endif %}
+
+</div>
+
+{%endblock%}

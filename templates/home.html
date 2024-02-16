@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block title%}Wolf store - home{%endblock%}
+
+{%block body%}
+
+<div class="container">
+    <h3>Our Products</h3>
+    <div class="container my-3 mx-3">
+        <ul class="list-unstyled d-flex">
+            {%for product in products%}
+            <li class="mx-2">
+                <div class=" card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.title}}</h5>
+                        <p class="card-text">{{product.desciption}}</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Product Price ${{product.price}}</li>
+                            <a href="#" class="card-link text-center my-2">Buy Pruduct</a>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+</div>
+
+{%endblock%}
