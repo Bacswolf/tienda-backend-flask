@@ -39,7 +39,7 @@ Este proyecto es un sistema backend desarrollado en Flask con una base de datos 
 
 1. **Página de Inicio:**
    - Muestra los productos disponibles.
-   - ['Imagenen principal][static/home.png]
+   - ['Imagenen principal][/static/home.png]
 
 2. **Página de Login:**
    - Permite iniciar sesión.
