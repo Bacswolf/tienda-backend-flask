@@ -43,6 +43,8 @@ Este proyecto es un sistema backend desarrollado en Flask con una base de datos 
 
 2. **Página de Login:**
    - Permite iniciar sesión.
+   - !['Imagenen principal](/login/home.png)
 
 3. **Página de Acciones:**
    - Lista los productos y permite actualizar, eliminar y agregar nuevos productos.
+   - !['Imagenen principal](/actions/home.png)
